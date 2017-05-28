@@ -2,6 +2,7 @@ module.exports = getHoodieDefaults
 
 function getHoodieDefaults () {
   return {
+    name: undefined,
     address: '127.0.0.1',
     port: 8080,
     data: '.hoodie',
@@ -13,6 +14,8 @@ function getHoodieDefaults () {
     inMemory: false,
     loglevel: 'warn',
     url: undefined,
-    adminPassword: undefined
+    adminPassword: undefined,
+    plugins: [],
+    app: {}
   }
 }
