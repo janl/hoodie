@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
+    - async > lodash:
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > @hoodie/store-server > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > pouchdb-admins > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > async > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > @hoodie/store-server > @hoodie/store-server-api > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
+    - '@hoodie/server > @hoodie/account-server > pouchdb-admins > lodash':
+        patched: '2020-05-01T01:00:28.611Z'
