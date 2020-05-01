@@ -34,7 +34,8 @@
     "pouchdb-mapreduce": "^6.0.6",
     "rc": "^1.1.6",
     "semver": "^5.1.0",
-    "yargs": "^7.0.1"
+    "yargs": "^7.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
@@ -71,6 +72,9 @@
     "pretest": "standard",
     "test": "nyc tap --no-cov './test/{unit,integration}/**/*-test.js'",
     "postinstall": "node ./bin/setup.js",
-    "textlint": "textlint docs/**/*.md README.md"
-  }
+    "textlint": "textlint docs/**/*.md README.md",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
