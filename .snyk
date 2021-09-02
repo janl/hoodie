@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - '@hoodie/server > @hoodie/store-server > pouchdb-hoodie-api > pouchdb-utils > debug':
+        patched: '2021-09-02T20:36:32.109Z'
+    - '@hoodie/server > @hoodie/store-server > @hoodie/store-server-api > pouchdb-hoodie-api > pouchdb-utils > debug':
+        patched: '2021-09-02T20:36:32.109Z'
+  'npm:ms:20170412':
+    - '@hoodie/server > @hoodie/store-server > pouchdb-hoodie-api > pouchdb-utils > debug > ms':
+        patched: '2021-09-02T20:36:32.109Z'
+    - '@hoodie/server > @hoodie/store-server > @hoodie/store-server-api > pouchdb-hoodie-api > pouchdb-utils > debug > ms':
+        patched: '2021-09-02T20:36:32.109Z'
